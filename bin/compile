@@ -14,4 +14,8 @@ cd $1
 #dpkg -x ./lp-solve_5.5.0.13-7_amd64.deb  ./lpsolve
 #rm -f ./lp-solve_5.5.0.13-7_amd64.deb
 
+
+debootstrap lpsolve /app
+chroot /app/lpsolve
+
 apt-get install liblpsolve55-dev lp-solve
