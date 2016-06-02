@@ -1,5 +1,8 @@
-topic "installing lpsolve"
+#!/bin/bash
 
+echo "Installing lpsolve"
+
+cd $1
 
 wget 'http://mirrors.kernel.org/ubuntu/pool/main/l/lp-solve/liblpsolve55-dev_5.5.0.13-7build1_amd64.deb'
 dpkg -x ./liblpsolve55-dev_5.5.0.13-7build1_amd64.deb  ./lpsolve
