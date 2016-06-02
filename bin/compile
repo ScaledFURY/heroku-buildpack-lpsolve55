@@ -4,12 +4,14 @@ echo "Installing lpsolve"
 
 cd $1
 
-wget 'http://mirrors.kernel.org/ubuntu/pool/main/l/lp-solve/liblpsolve55-dev_5.5.0.13-7build1_amd64.deb'
-dpkg -x ./liblpsolve55-dev_5.5.0.13-7build1_amd64.deb  ./lpsolve
-rm -f ./liblpsolve55-dev_5.5.0.13-7build1_amd64.deb
+#wget 'http://mirrors.kernel.org/ubuntu/pool/main/l/lp-solve/liblpsolve55-dev_5.5.0.13-7build1_amd64.deb'
+#dpkg -x ./liblpsolve55-dev_5.5.0.13-7build1_amd64.deb  ./lpsolve
+#rm -f ./liblpsolve55-dev_5.5.0.13-7build1_amd64.deb
 
 
 
-wget 'http://mirrors.kernel.org/ubuntu/pool/main/l/lp-solve/lp-solve_5.5.0.13-7_amd64.deb'
-dpkg -x ./lp-solve_5.5.0.13-7_amd64.deb  ./lpsolve
-rm -f ./lp-solve_5.5.0.13-7_amd64.deb
+#wget 'http://mirrors.kernel.org/ubuntu/pool/main/l/lp-solve/lp-solve_5.5.0.13-7_amd64.deb'
+#dpkg -x ./lp-solve_5.5.0.13-7_amd64.deb  ./lpsolve
+#rm -f ./lp-solve_5.5.0.13-7_amd64.deb
+
+apt-get install liblpsolve55-dev lp-solve
