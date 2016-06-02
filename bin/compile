@@ -8,3 +8,4 @@ wget 'http://mirrors.kernel.org/ubuntu/pool/main/l/lp-solve/liblpsolve55-dev_5.5
 dpkg -x ./liblpsolve55-dev_5.5.0.13-7build1_amd64.deb  ./lpsolve
 rm -f ./liblpsolve55-dev_5.5.0.13-7build1_amd64.deb
 
+export INCLUDE_PATH=$1/lpsolve/usr/include/lpsolve
